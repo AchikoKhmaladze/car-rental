@@ -1,6 +1,6 @@
 import Header from "./components/header/Header";
 import { Routes, Route } from "react-router-dom";
-import { createContext } from "react";
+import { BrowserRouter } from "react-router-dom";
 import Mainpage from "./components/pages/mainpage/Mainpage";
 import Aboutpage from "./components/pages/aboutpage/Aboutpage";
 import Modelspage from "./components/pages/modelspage/Modelspage";
@@ -9,19 +9,10 @@ import Teampage from "./components/pages/teampage/Teampage";
 import Footer from "./components/footer/Footer";
 import Contactpage from "./components/pages/contactpage/Contactpage.jsx";
 import ScrollToTop from "./ScrollTotop";
-export const MyContext = createContext(null);
 function App() {
-  const rame = () => {
-    console.log("from props )");
-  };
   return (
     <>
-      <MyContext.Provider
-        value={{
-          name: "achi",
-          func: rame,
-        }}
-      >
+      <BrowserRouter>
         <Header />
         <ScrollToTop />
         <Routes>
@@ -33,7 +24,7 @@ function App() {
           <Route path="/contact" element={<Contactpage />} />
         </Routes>
         <Footer />
-      </MyContext.Provider>
+      </BrowserRouter>
     </>
   );
 }

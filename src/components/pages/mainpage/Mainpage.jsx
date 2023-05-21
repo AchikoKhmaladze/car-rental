@@ -17,11 +17,9 @@ import {
   faAngleRight,
   faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { MyContext } from "../../../App";
 
 export default function Mainpage() {
   // cars information //
-  const Context = useContext(MyContext);
 
   const cars = [
     {
