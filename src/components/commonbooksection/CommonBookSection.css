@@ -1,0 +1,63 @@
+.common-book-section {
+  height: 200px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  position: relative;
+  background-image: url(/public/assets/mainpage/common-book-bg.png);
+}
+
+.common-book-section-overlay {
+  background-color: #2d2d2d;
+  height: 100%;
+  opacity: 0.89;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+.common-book-section-content {
+  max-width: 950px;
+  display: flex;
+  gap: 50px;
+  z-index: 0;
+  width: 100%;
+  font-family: rubik;
+  align-items: center;
+}
+
+.common-book-section-content h3 {
+  font-size: 33px;
+  color: white;
+}
+
+.common-book-section-content span {
+  color: #ff4d30;
+  font-size: 31px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1017px) {
+  .common-book-section-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .common-book-section-content h3 {
+    font-size: 30px;
+  }
+  .common-book-section-content span {
+    font-size: 27px;
+  }
+}

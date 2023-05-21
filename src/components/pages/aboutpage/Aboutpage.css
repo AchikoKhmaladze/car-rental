@@ -1,0 +1,119 @@
+.about-section {
+  display: flex;
+  width: 100%;
+  padding: 100px 30px;
+  justify-content: center;
+  font-family: rubik;
+}
+
+.about-section-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 950px;
+  width: 100%;
+}
+
+.about-section-content-info-inner {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.about-section-content-info h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.about-section-content-info h1 {
+  font-size: 43px;
+  margin: 10px 0px;
+}
+.about-section-content-info p {
+  font-size: 16px;
+  color: #706f7b;
+  font-family: poppins;
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+.about-section-content-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+}
+
+.about-section-content-info-inner {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  max-width: 470px;
+  gap: 20px;
+}
+
+.about-img {
+  width: 450px;
+  height: 450px;
+}
+
+.about-section-content-info-inner-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.about-section-content-info-inner-item p {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+  font-family: rubik;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.about-section-content-info-inner-item p span {
+  font-size: 16px;
+  color: #706f7b;
+  font-family: poppins;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 980px) {
+  .about-section-content {
+    flex-direction: column;
+  }
+  .about-section-content-info h4,
+  .about-section-content-info h1,
+  .about-section-content-info p {
+    text-align: center;
+  }
+  .about-section-content-info-inner-item {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .about-section-content-info-inner {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .about-section-content-info-inner p {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-section-content-info-inner-item {
+    gap: 10px;
+  }
+  .about-section-content-info h1 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,142 @@
+.models-section {
+  padding: 100px 33px 130px 33px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: rubik;
+}
+
+.models-section-content-wraper {
+  max-width: 1120px;
+  width: 100%;
+}
+
+.models-section-content-div {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.models-section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.models-section-content-top {
+  width: 100%;
+  height: 250px;
+  border-radius: 50px;
+}
+
+.models-section-content-top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.models-section-content-bottom {
+  padding: 25px 30px 25px 30px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgb(214, 213, 213);
+  border-bottom: 1px solid rgb(214, 213, 213);
+  border-right: 1px solid rgb(214, 213, 213);
+}
+
+.models-section-content-bottom-info {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  border-bottom: 1px solid rgb(221, 220, 220);
+  padding-bottom: 20px;
+}
+
+.models-section-content-bottom-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.models-section-content-bottom-info-item-name,
+.models-section-content-bottom-info-item-price {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.name {
+  font-size: 25px;
+}
+
+.price {
+  font-size: 28px;
+}
+
+.models-section-content-bottom-info-item-name span {
+  display: flex;
+  gap: 3px;
+}
+
+.models-section-content-bottom-info-item-price {
+  align-items: center;
+}
+
+.models-section-content-bottom-info-item-fuel,
+.models-section-content-bottom-info-item-doors,
+.models-section-content-bottom-info-item-mark,
+.models-section-content-bottom-info-item-transmission {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.models-section-content-bottom-info-item p {
+  color: #777;
+  font-size: 19px;
+}
+
+.models-section-content-bottom-info-item-price p {
+  font-size: 18px;
+  color: rgb(19, 18, 18);
+}
+
+.booking-button {
+  background-color: #ff4d30;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  padding: 23px 0px;
+  outline: none;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-family: rubik;
+  font-size: 18px;
+  border-radius: 3px;
+  margin-top: 25px;
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.booking-button:hover {
+  box-shadow: 0 10px 15px 0 rgb(255 83 48 / 60%);
+  background-color: #fa4226;
+}
+
+@media screen and (max-width: 1098px) {
+  .models-section-content-div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .models-section-content-div {
+    grid-template-columns: 1fr;
+  }
+}
+
+.link {
+  text-decoration: none;
+}

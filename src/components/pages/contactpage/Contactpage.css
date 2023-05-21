@@ -1,0 +1,145 @@
+.contact-section {
+  width: 100%;
+  display: flex;
+  padding: 100px 70px 150px 70px;
+  justify-content: center;
+  align-items: center;
+  font-family: rubik;
+  background-image: url(/public/assets/contact/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.contact-section-content-wraper {
+  max-width: 1300px;
+  width: 100%;
+}
+.contact-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 50px;
+}
+
+.contact-section-info-inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+  gap: 35px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-family: poppins;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact-section-info-inner p {
+  color: #706f7b;
+  font-family: poppins;
+}
+
+.contact-section-info-inner h1 {
+  font-size: 43px;
+}
+
+.contact span:hover {
+  color: orangered;
+}
+
+.contact-section-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-section-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-section-form label {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  gap: 5px;
+  font-family: poppins;
+}
+
+.contact-section-form span {
+  color: #ff4d30;
+}
+
+.contact-section-form input {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 19px 30px;
+}
+
+.contact-section-form input::placeholder {
+  font-size: 16px;
+}
+
+.contact-section-form textarea {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding: 19px 30px;
+  width: 100%;
+  height: 200px;
+}
+
+.contact-section-form textarea::placeholder {
+  font-size: 16px;
+}
+
+.submit-form {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 2px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 19px 0px;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 981px) {
+  .contact-section-content {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+  .contact-section-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact {
+    align-items: center;
+  }
+  .contact-section-form label {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,44 @@
+.common-section {
+  height: 400px;
+  background-image: url(/public/assets/mainpage/common-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common-section-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: hsla(0, 0%, 100%, 0.92);
+}
+
+.common-section-content-wraper {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+}
+
+.common-section-content {
+  display: flex;
+  z-index: 0;
+  flex-direction: column;
+  font-family: rubik;
+  gap: 10px;
+}
+
+.common-section-content h3 {
+  font-size: 36px;
+}
+
+.common-section h5 {
+  font-size: 16px;
+}

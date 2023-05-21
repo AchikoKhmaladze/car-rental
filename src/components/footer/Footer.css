@@ -1,0 +1,150 @@
+footer {
+  padding: 100px 35px;
+  font-family: rubik;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content-wraper {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.footer-content-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 260px;
+}
+
+.footer-content h4 {
+  font-size: 26px;
+}
+
+.footer-content span {
+  font-weight: 100;
+}
+.footer-content p {
+  /* font-size: 15px; */
+  font-family: poppins;
+}
+
+.footer-offer-text {
+  color: #706f7b !important;
+  font-family: poppins;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact-phone,
+.contact-email {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.footer-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-content ul li {
+  font-size: 16px;
+  font-family: poppins;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.footer-content ul li:hover {
+  color: orangered;
+}
+
+.contact-phone:hover {
+  color: orangered;
+}
+
+.contact-email:hover {
+  color: orangered;
+}
+
+.footer-content input {
+  background-color: #ececec;
+  border-color: transparent;
+  border-width: 1px;
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px 60px;
+}
+
+.footer-content input::placeholder {
+  font-size: 15px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-content button {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 2px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 20px;
+
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-content button:hover {
+  box-shadow: 0 10px 15px 0 rgb(255 83 48 / 40%);
+  background-color: #fa4226;
+}
+
+@media screen and (max-width: 930px) {
+  .footer-content-div {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content-div {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-div {
+    align-items: center;
+  }
+}
