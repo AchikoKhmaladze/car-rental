@@ -3,7 +3,7 @@
 
 # Getting Started with Create React App
 
-# Live - https://achikokhmaladze.github.io/car-rental/
+ Live - https://achikokhmaladze.github.io/car-rental/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
