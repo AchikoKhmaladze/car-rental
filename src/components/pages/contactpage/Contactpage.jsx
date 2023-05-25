@@ -9,6 +9,8 @@ import {
 import CommonSection from "../../commonsection/CommonSection";
 import CommonBookSection from "../../commonbooksection/CommonBookSection";
 import "./Contactpage.css";
+import Footer from "../../footer/Footer";
+import Header from "../../header/Header";
 
 export default function Contactpage() {
   const handleSubmit = (e) => {
@@ -16,6 +18,7 @@ export default function Contactpage() {
   };
   return (
     <>
+      <Header />
       <CommonSection text="Contact" />
       <section className="contact-section">
         <div className="contact-section-content-wraper">
@@ -85,6 +88,7 @@ export default function Contactpage() {
         </div>
       </section>
       <CommonBookSection />
+      <Footer />
     </>
   );
 }

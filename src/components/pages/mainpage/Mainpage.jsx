@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import "./Mainpage.css";
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-scroll";
+import Header from "../../header/Header";
+import Footer from "../../footer/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -24,7 +26,7 @@ export default function Mainpage() {
   const cars = [
     {
       name: "Audi A1 S-Line",
-      src: "/assets/mainpage/audi.jpg",
+      src: "/car-rental/assets/mainpage/audi.jpg",
       model: "Audi",
       mark: "A1",
       year: 2012,
@@ -36,7 +38,7 @@ export default function Mainpage() {
 
     {
       name: "VW Golf 6",
-      src: "/assets/mainpage/golf.jpg",
+      src: "/car-rental/assets/mainpage/golf.jpg",
       model: "Golf 6",
       mark: "Volkswagen",
       year: 2008,
@@ -48,7 +50,7 @@ export default function Mainpage() {
 
     {
       name: "Toyota Camry",
-      src: "/assets/mainpage/toyota.jpg",
+      src: "/car-rental/assets/mainpage/toyota.jpg",
       model: "Camry",
       mark: "Toyota",
       year: 2006,
@@ -60,7 +62,7 @@ export default function Mainpage() {
 
     {
       name: "BMW 320 Moderline",
-      src: "/assets/mainpage/bmw.jpg",
+      src: "/car-rental/assets/mainpage/bmw.jpg",
       model: "320",
       mark: "BMW",
       year: 2012,
@@ -72,7 +74,7 @@ export default function Mainpage() {
 
     {
       name: "Mercedes-Benz GLK",
-      src: "/assets/mainpage/mercedes.jpg",
+      src: "/car-rental/assets/mainpage/mercedes.jpg",
       model: "Benz GLK",
       mark: "Mercedes",
       year: 2006,
@@ -84,7 +86,7 @@ export default function Mainpage() {
 
     {
       name: "VW Passat CC",
-      src: "/assets/mainpage/passat.jpg",
+      src: "/car-rental/assets/mainpage/passat.jpg",
       model: "Passat CC",
       mark: "Volkswagen",
       year: 2008,
@@ -175,10 +177,11 @@ export default function Mainpage() {
 
   return (
     <>
+      <Header />
       <section className="first-section">
         <img
           className="first-section-bg"
-          src="/assets/mainpage/background.png"
+          src="/car-rental/assets/mainpage/background.png"
           alt=""
         />
         <div className="first-section-content-wraper">
@@ -239,7 +242,7 @@ export default function Mainpage() {
             </div>
             <img
               className="first-section-car"
-              src="/assets/mainpage/mainpage-car.png"
+              src="/car-rental/assets/mainpage/mainpage-car.png"
               alt=""
             />
           </div>
@@ -633,7 +636,7 @@ export default function Mainpage() {
         <div className="second-section-content-wraper">
           <div ref={scrollToMoreInfo} className="second-section-content">
             <div className="second-section-content-info">
-              <img src="/assets/mainpage/selectcar.png" alt="" />
+              <img src="/car-rental/assets/mainpage/selectcar.png" alt="" />
               <h2>Select Car</h2>
               <p>
                 We offers a big range of vehicles for all your driving needs. We
@@ -641,7 +644,10 @@ export default function Mainpage() {
               </p>
             </div>
             <div className="second-section-content-info">
-              <img src="/assets/mainpage/contactoperator.png" alt="" />
+              <img
+                src="/car-rental/assets/mainpage/contactoperator.png"
+                alt=""
+              />
               <h2>Contact Operator</h2>
               <p>
                 Our knowledgeable and friendly operators are always ready to
@@ -649,7 +655,7 @@ export default function Mainpage() {
               </p>
             </div>
             <div className="second-section-content-info">
-              <img src="/assets/mainpage/letsdrive.png" alt="" />
+              <img src="/car-rental/assets/mainpage/letsdrive.png" alt="" />
               <h2>Let's Drive</h2>
               <p>
                 Whether you're hitting the open road, we've got you covered with
@@ -810,7 +816,7 @@ export default function Mainpage() {
           <div className="fourth-section-content">
             <img
               className="three-car"
-              src="/assets/mainpage/threecar.png"
+              src="/car-rental/assets/mainpage/threecar.png"
               alt=""
             />
             <div className="fourth-section-content-info">
@@ -834,7 +840,10 @@ export default function Mainpage() {
               </div>
               <div className="fourth-section-content-info-inner2">
                 <div className="fourth-section-content-info-inner2-content">
-                  <img src="/assets/mainpage/fourth-section-img1.png" alt="" />
+                  <img
+                    src="/car-rental/assets/mainpage/fourth-section-img1.png"
+                    alt=""
+                  />
                   <div className="fourth-section-content-info-inner2-content-info">
                     <h3>Cross Country Drive</h3>
                     <p>
@@ -844,7 +853,10 @@ export default function Mainpage() {
                   </div>
                 </div>
                 <div className="fourth-section-content-info-inner2-content">
-                  <img src="/assets/mainpage/fourth-section-img2.png" alt="" />
+                  <img
+                    src="/car-rental/assets/mainpage/fourth-section-img2.png"
+                    alt=""
+                  />
                   <div className="fourth-section-content-info-inner2-content-info">
                     <h3>All Inclusive Pricing</h3>
                     <p>
@@ -854,7 +866,10 @@ export default function Mainpage() {
                   </div>
                 </div>
                 <div className="fourth-section-content-info-inner2-content">
-                  <img src="/assets/mainpage/fourth-section-img3.png" alt="" />
+                  <img
+                    src="/car-rental/assets/mainpage/fourth-section-img3.png"
+                    alt=""
+                  />
                   <div className="fourth-section-content-info-inner2-content-info">
                     <h3>No Hidden Charges</h3>
                     <p>
@@ -891,7 +906,7 @@ export default function Mainpage() {
                 <div className="testimonial-section-content-info-profile">
                   <img
                     className="harry"
-                    src="/assets/mainpage/harry.jpg"
+                    src="/car-rental/assets/mainpage/harry.jpg"
                     alt=""
                   />
                   <div className="testimonial-section-content-info-profile-inner">
@@ -913,7 +928,11 @@ export default function Mainpage() {
               </span>
               <div className="testimonial-section-content-info-subinfo">
                 <div className="testimonial-section-content-info-profile">
-                  <img className="ron" src="/assets/mainpage/ron.jpg" alt="" />
+                  <img
+                    className="ron"
+                    src="/car-rental/assets/mainpage/ron.jpg"
+                    alt=""
+                  />
                   <div className="testimonial-section-content-info-profile-inner">
                     <h5>Ron Rizzly</h5>
                     <p>Mtskheta</p>
@@ -1058,11 +1077,12 @@ export default function Mainpage() {
             Led income months itself and houses you.
           </p>
           <div className="download-ways">
-            <img src="/assets/mainpage/play-store.svg" alt="" />
-            <img src="/assets/mainpage/app-store.svg" alt="" />
+            <img src="/car-rental/assets/mainpage/play-store.svg" alt="" />
+            <img src="/car-rental/assets/mainpage/app-store.svg" alt="" />
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

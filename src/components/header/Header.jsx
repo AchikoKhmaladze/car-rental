@@ -8,39 +8,43 @@ export default function Header() {
   return (
     <header>
       <div className="header-top">
-        <Link to={"/"}>
-          <img className="logo" src="/assets/header/logo.png" alt="" />
+        <Link to={"/car-rental"}>
+          <img
+            className="logo"
+            src="/car-rental/assets/header/logo.png"
+            alt=""
+          />
         </Link>
       </div>
       <div className="header-middle">
         <ul>
           <li>
-            <Link to={"/"}>
+            <Link to={"/car-rental"}>
               <a>Home</a>
             </Link>
           </li>
           <li>
-            <Link to="/about">
+            <Link to="/car-rental/about">
               <a>About</a>
             </Link>
           </li>
           <li>
-            <Link to="/models">
+            <Link to="/car-rental/models">
               <a>Vehicle Modles</a>
             </Link>
           </li>
           <li>
-            <Link to="/testimonials">
+            <Link to="/car-rental/testimonials">
               <a>Testimonials</a>
             </Link>
           </li>
           <li>
-            <Link to="/team">
+            <Link to="/car-rental/team">
               <a>Our Team</a>
             </Link>
           </li>
           <li>
-            <Link to="/contact">
+            <Link to="/car-rental/contact">
               <a>Contact</a>
             </Link>
           </li>
@@ -71,7 +75,7 @@ export default function Header() {
             setActiveNav(false);
           }}
           className="link"
-          to={"/"}
+          to={"/car-rental"}
         >
           <li>Home</li>
         </Link>
@@ -80,7 +84,7 @@ export default function Header() {
             setActiveNav(false);
           }}
           className="link"
-          to="/about"
+          to="/car-rental/about"
         >
           <li>About</li>
         </Link>
@@ -89,7 +93,7 @@ export default function Header() {
             setActiveNav(false);
           }}
           className="link"
-          to="/models"
+          to="/car-rental/models"
         >
           <li>Vehicle Modles</li>
         </Link>
@@ -98,7 +102,7 @@ export default function Header() {
             setActiveNav(false);
           }}
           className="link"
-          to="/testimonials"
+          to="/car-rental/testimonials"
         >
           <li>Testimonials</li>
         </Link>
@@ -107,7 +111,7 @@ export default function Header() {
             setActiveNav(false);
           }}
           className="link"
-          to="/team"
+          to="/car-rental/team"
         >
           <li>Our Team</li>
         </Link>
@@ -116,7 +120,7 @@ export default function Header() {
             setActiveNav(false);
           }}
           className="link"
-          to="/contact"
+          to="/car-rental/contact"
         >
           <li>Contact</li>
         </Link>

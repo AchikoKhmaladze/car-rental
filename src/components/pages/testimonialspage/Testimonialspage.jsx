@@ -15,10 +15,13 @@ import {
   faAngleRight,
   faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
+import Header from "../../header/Header";
+import Footer from "../../footer/Footer";
 
 export default function Testimonialspage() {
   return (
     <>
+      <Header />
       <CommonSection text="Testimonials" />
       <section className="testimonial-section">
         <div className="testimonial-section-content-wraper">
@@ -43,7 +46,7 @@ export default function Testimonialspage() {
                 <div className="testimonial-section-content-info-profile">
                   <img
                     className="harry"
-                    src="/assets/mainpage/harry.jpg"
+                    src="/car-rental/assets/mainpage/harry.jpg"
                     alt=""
                   />
                   <div className="testimonial-section-content-info-profile-inner">
@@ -65,7 +68,11 @@ export default function Testimonialspage() {
               </span>
               <div className="testimonial-section-content-info-subinfo">
                 <div className="testimonial-section-content-info-profile">
-                  <img className="ron" src="/assets/mainpage/ron.jpg" alt="" />
+                  <img
+                    className="ron"
+                    src="/car-rental/assets/mainpage/ron.jpg"
+                    alt=""
+                  />
                   <div className="testimonial-section-content-info-profile-inner">
                     <h5>Ron Rizzly</h5>
                     <p>Mtskheta</p>
@@ -82,6 +89,7 @@ export default function Testimonialspage() {
         </div>
       </section>
       <CommonBookSection />
+      <Footer />
     </>
   );
 }

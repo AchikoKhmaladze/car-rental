@@ -6,6 +6,8 @@ import "./Modelspage.css";
 // import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 import CommonBookSection from "../../commonbooksection/CommonBookSection";
+import Footer from "../../footer/Footer";
+import Header from "../../header/Header";
 
 export default function Modelspage() {
   const [acttive, setActive] = useState(false);
@@ -18,7 +20,7 @@ export default function Modelspage() {
       doors: "4/5",
       transmission: "Manual",
       fuel: "Diesel",
-      img: "/assets/models/audi.png",
+      img: "/car-rental/assets/models/audi.png",
     },
     {
       name: "Golf 6",
@@ -27,7 +29,7 @@ export default function Modelspage() {
       doors: "4/5",
       transmission: "Manual",
       fuel: "Diesel",
-      img: "/assets/models/golf.png",
+      img: "/car-rental/assets/models/golf.png",
     },
     {
       name: "Toyota",
@@ -36,7 +38,7 @@ export default function Modelspage() {
       doors: "4/5",
       transmission: "Manual",
       fuel: "Diesel",
-      img: "/assets/models/toyota.png",
+      img: "/car-rental/assets/models/toyota.png",
     },
     {
       name: "BMW 320",
@@ -45,7 +47,7 @@ export default function Modelspage() {
       doors: "4/5",
       transmission: "Manual",
       fuel: "Diesel",
-      img: "/assets/models/bmw.png",
+      img: "/car-rental/assets/models/bmw.png",
     },
     {
       name: "Mercedes",
@@ -54,7 +56,7 @@ export default function Modelspage() {
       doors: "4/5",
       transmission: "Manual",
       fuel: "Diesel",
-      img: "/assets/models/mercedes.png",
+      img: "/car-rental/assets/models/mercedes.png",
     },
     {
       name: "VW Passat",
@@ -63,12 +65,13 @@ export default function Modelspage() {
       doors: "4/5",
       transmission: "Manual",
       fuel: "Diesel",
-      img: "/assets/models/passat.png",
+      img: "/car-rental/assets/models/passat.png",
     },
   ];
 
   return (
     <>
+      <Header />
       <CommonSection text="Vehicle Models" />
       <section className="models-section">
         <div className="models-section-content-wraper">
@@ -138,7 +141,7 @@ export default function Modelspage() {
                         </div>
                       </div>
                     </div>
-                    <Link to="/">
+                    <Link to="/car-rental">
                       <button className="booking-button">Book Ride</button>
                     </Link>
                   </div>
@@ -149,6 +152,7 @@ export default function Modelspage() {
         </div>
       </section>
       <CommonBookSection />
+      <Footer />
     </>
   );
 }

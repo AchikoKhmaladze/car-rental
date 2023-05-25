@@ -2,15 +2,18 @@ import React from "react";
 import CommonSection from "../../commonsection/CommonSection";
 import CommonBookSection from "../../commonbooksection/CommonBookSection";
 import "./Aboutpage.css";
+import Header from "../../header/Header";
+import Footer from "../../footer/Footer";
 export default function Aboutpage() {
   return (
     <>
+      <Header />
       <CommonSection text="About" />
       <section className="about-section">
         <div className="about-section-content">
           <img
             className="about-img"
-            src="/assets/mainpage/about-img.jpg"
+            src="/car-rental/assets/mainpage/about-img.jpg"
             alt=""
           />
           <div className="about-section-content-info">
@@ -26,7 +29,7 @@ export default function Aboutpage() {
             <div className="about-section-content-info-inner">
               <div className="about-section-content-info-inner-item">
                 <div>
-                  <img src="/assets/mainpage/about-car.png" alt="" />
+                  <img src="/car-rental/assets/mainpage/about-car.png" alt="" />
                 </div>
                 <p>
                   20 <span>Car Types</span>
@@ -34,7 +37,10 @@ export default function Aboutpage() {
               </div>
               <div className="about-section-content-info-inner-item">
                 <div>
-                  <img src="/assets/mainpage/about-house.png" alt="" />
+                  <img
+                    src="/car-rental/assets/mainpage/about-house.png"
+                    alt=""
+                  />
                 </div>
                 <p>
                   85 <span>Rental Outlets</span>
@@ -42,7 +48,10 @@ export default function Aboutpage() {
               </div>
               <div className="about-section-content-info-inner-item">
                 <div>
-                  <img src="/assets/mainpage/about-car-garage.png" alt="" />
+                  <img
+                    src="/car-rental/assets/mainpage/about-car-garage.png"
+                    alt=""
+                  />
                 </div>
                 <p>
                   75 <span>Repair Shop</span>
@@ -60,7 +69,7 @@ export default function Aboutpage() {
         <div className="second-section-content-wraper">
           <div className="second-section-content">
             <div className="second-section-content-info">
-              <img src="/assets/mainpage/selectcar.png" alt="" />
+              <img src="/car-rental/assets/mainpage/selectcar.png" alt="" />
               <h2>Select Car</h2>
               <p>
                 We offer a big range of vehicles for all your driving needs. We
@@ -68,7 +77,10 @@ export default function Aboutpage() {
               </p>
             </div>
             <div className="second-section-content-info">
-              <img src="/assets/mainpage/contactoperator.png" alt="" />
+              <img
+                src="/car-rental/assets/mainpage/contactoperator.png"
+                alt=""
+              />
               <h2>Contact Operator</h2>
               <p>
                 Our knowledgeable and friendly operators are always ready to
@@ -76,7 +88,7 @@ export default function Aboutpage() {
               </p>
             </div>
             <div className="second-section-content-info">
-              <img src="/assets/mainpage/letsdrive.png" alt="" />
+              <img src="/car-rental/assets/mainpage/letsdrive.png" alt="" />
               <h2>Let's Drive</h2>
               <p>
                 Whether you're hitting the open road, we've got you covered with
@@ -87,6 +99,7 @@ export default function Aboutpage() {
         </div>
       </section>
       <CommonBookSection />
+      <Footer />
     </>
   );
 }
