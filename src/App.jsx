@@ -12,19 +12,17 @@ import ScrollToTop from "./ScrollTotop";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Mainpage />} />
-          <Route path="/about" element={<Aboutpage />} />
-          <Route path="/models" element={<Modelspage />} />
-          <Route path="/testimonials" element={<Testimonialspage />} />
-          <Route path="/team" element={<Teampage />} />
-          <Route path="/contact" element={<Contactpage />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Header />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/about" element={<Aboutpage />} />
+        <Route path="/models" element={<Modelspage />} />
+        <Route path="/testimonials" element={<Testimonialspage />} />
+        <Route path="/team" element={<Teampage />} />
+        <Route path="/contact" element={<Contactpage />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
